@@ -25,14 +25,21 @@
   width: 15em;
   background-color: red;
 }
+
+.clearfix:before, .clearfix:after {
+  content:  "";
+  display:  table;
+}
 .clearfix:after {
-  content: "";
-  display: block;//本是行内元素
   clear: both;
+}
+.clearfix {
+  zoom: 1;
 }
 .footer-section {
   float: left;
 }
+
 footer {
   background-color: yellow;
 }
