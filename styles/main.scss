@@ -1,11 +1,38 @@
 @import 'common';
-header {
-  background-color: $primary-color-dark;
-  height: 3em;
+@for $num from 1 through $boxcount {
+  .block#{$num} {
+    @include boxbase;
+    height: 5em * $num;
+    width: 5em * $num;
+  }
 }
-.box  {
-  height: 30em;
-  width: 30em;
-  background-color: $primary-color-light;
-  margin: 3em auto;
+* {
+  box-sizing: border-box;
+  // padding limit
+}
+.block {
+  color: $primary-color-text;
+}
+.block1 {
+  background-color: blue;
+  float: left;
+}
+.block2 {
+  background-color: green;
+  float: right;
+}
+.container {
+  width: 15em;
+  background-color: red;
+}
+.clearfix:after {
+  content: "";
+  display: block;//本是行内元素
+  clear: both;
+}
+.footer-section {
+  float: left;
+}
+footer {
+  background-color: yellow;
 }
