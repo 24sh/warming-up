@@ -1,11 +1,11 @@
 @import 'common';
-h1 {
-  color: blue;
-  margin: 100px 100px 0 0;
-  background-color: red;
+header {
+  background-color: $primary-color-dark;
+  height: 3em;
 }
-body {
-  margin: 20px 20px 0 0;
-  background-color:  yellow;
-  color: green;
+.box  {
+  height: 30em;
+  width: 30em;
+  background-color: $primary-color-light;
+  margin: 3em auto;
 }
