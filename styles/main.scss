@@ -10,18 +10,32 @@
   box-sizing: border-box;
   // padding limit
 }
+
 .block {
   color: $primary-color-text;
 }
+
 .block1 {
   background-color: blue;
   float: left;
 }
 .block2 {
+  position: relative;
   background-color: green;
   float: right;
 }
+.pink {
+  width: 3em;
+  height: 3em;
+  background-color: #ff5722;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 1em;
+  left: 1em;
+}
 .container {
+  position: relative;
   width: 15em;
   background-color: red;
 }
